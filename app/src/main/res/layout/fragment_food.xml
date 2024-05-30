@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".src.food.FoodFragment">
+
+    <TextView
+        android:id="@+id/food_title_today_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/today"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/food_title_especially_tv"
+        style="@style/bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/especially"
+        android:textColor="@color/narandee_green"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/food_title_today_tv"
+        app:layout_constraintTop_toTopOf="@+id/food_title_today_tv" />
+
+    <TextView
+        android:id="@+id/food_title_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_title"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/food_title_today_tv"
+        app:layout_constraintTop_toBottomOf="@+id/food_title_today_tv" />
+
+    <Spinner
+        android:id="@+id/food_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_dropdown"
+        android:popupBackground="@drawable/spinner_dropdown_pop"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_title_tv"
+        tools:listitem="@layout/item_category_selected" />
+
+    <TextView
+        android:id="@+id/food_time_title_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/food_time_title"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/food_title_today_tv"
+        app:layout_constraintTop_toBottomOf="@+id/food_category_spinner" />
+
+    <Spinner
+        android:id="@+id/food_time_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_dropdown"
+        android:popupBackground="@drawable/spinner_dropdown_pop"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_time_title_tv"
+        tools:listitem="@layout/item_category_selected" />
+
+    <Button
+        android:id="@+id/food_next_btn"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_button"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".src.clothes.ClothesFragment">
+
+    <TextView
+        android:id="@+id/clothes_title_today_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/today"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clothes_title_especially_tv"
+        style="@style/bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/especially"
+        android:textColor="@color/narandee_green"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/clothes_title_today_tv"
+        app:layout_constraintTop_toTopOf="@+id/clothes_title_today_tv" />
+
+    <TextView
+        android:id="@+id/clothes_title_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clothes_title"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/clothes_title_today_tv"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_title_today_tv" />
+
+    <Spinner
+        android:id="@+id/clothes_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_dropdown"
+        android:popupBackground="@drawable/spinner_dropdown_pop"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_title_tv"
+        tools:listitem="@layout/item_category_selected" />
+
+    <TextView
+        android:id="@+id/clothes_location_title_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/clothes_location_title"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/clothes_title_today_tv"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_category_spinner" />
+
+    <TextView
+        android:id="@+id/clothes_location_caution_tv"
+        style="@style/regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clothes_location_title_2"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/clothes_location_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_location_title_tv" />
+
+    <EditText
+        android:id="@+id/clothes_location_et"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stroke_round_8_green"
+        android:hint="@string/location_example"
+        android:padding="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_location_caution_tv"
+        tools:listitem="@layout/item_category" />
+
+    <Button
+        android:id="@+id/clothes_check_location_btn"
+        style="@style/regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_round_8_grey"
+        android:stateListAnimator="@null"
+        android:text="@string/clothes_check_location"
+        app:layout_constraintEnd_toEndOf="@+id/clothes_location_et"
+        app:layout_constraintStart_toStartOf="@+id/clothes_location_et"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_location_et" />
+
+    <Button
+        android:id="@+id/clothes_current_location_btn"
+        style="@style/regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_round_8_grey"
+        android:stateListAnimator="@null"
+        android:text="@string/clothes_get_location"
+        app:layout_constraintEnd_toEndOf="@+id/clothes_check_location_btn"
+        app:layout_constraintStart_toStartOf="@+id/clothes_check_location_btn"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_check_location_btn" />
+
+    <TextView
+        android:id="@+id/clothes_location_error_tv"
+        style="@style/regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/clothes_location_error"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/clothes_current_location_btn"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_current_location_btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/clothes_address_error_tv"
+        style="@style/regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/clothes_address_error"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/clothes_current_location_btn"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_current_location_btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/clothes_selected_address_title_tv"
+        style="@style/regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clothes_selected_address_title"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/clothes_check_location_btn"
+        app:layout_constraintTop_toBottomOf="@+id/clothes_location_error_tv" />
+
+    <TextView
+        android:id="@+id/clothes_selected_address_tv"
+        style="@style/regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/clothes_selected_address_title_tv"
+        app:layout_constraintTop_toTopOf="@+id/clothes_selected_address_title_tv"
+        tools:text="구미시 인동동" />
+
+    <Button
+        android:id="@+id/clothes_next_impossible_btn"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_round_8_grey_darker"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clothes_next_btn"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_button"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

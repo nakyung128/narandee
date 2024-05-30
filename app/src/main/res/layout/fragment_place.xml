@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.place.PlaceFragment">
+
+    <TextView
+        android:id="@+id/place_title_today_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/place_title_1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/place_title_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_title_2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/place_title_today_tv"
+        app:layout_constraintTop_toBottomOf="@+id/place_title_today_tv" />
+
+    <Spinner
+        android:id="@+id/place_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_dropdown"
+        android:popupBackground="@drawable/spinner_dropdown_pop"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_title_tv"
+        tools:listitem="@layout/item_category_selected" />
+
+    <TextView
+        android:id="@+id/place_time_title_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/place_title_3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/place_title_today_tv"
+        app:layout_constraintTop_toBottomOf="@+id/place_category_spinner" />
+
+    <EditText
+        android:id="@+id/place_detail_et"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stroke_round_8_green"
+        android:hint="@string/place_example"
+        android:padding="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:listitem="@layout/item_category" />
+
+    <TextView
+        android:id="@+id/place_with_title"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/place_with_title"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/place_title_today_tv"
+        app:layout_constraintTop_toBottomOf="@+id/place_detail_et" />
+
+    <Spinner
+        android:id="@+id/place_with_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_dropdown"
+        android:popupBackground="@drawable/spinner_dropdown_pop"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_with_title"
+        tools:listitem="@layout/item_category_selected" />
+
+
+    <Button
+        android:id="@+id/place_next_btn"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_button"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/place_title_5"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintStart_toStartOf="@+id/place_time_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/place_time_title_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

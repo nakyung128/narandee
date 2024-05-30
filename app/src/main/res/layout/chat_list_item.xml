@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/my_chat_tv"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/icon_chat"
+            android:breakStrategy="simple"
+            android:gravity="center_vertical"
+            android:maxWidth="260dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            tools:text="hello" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_chat"
+            android:backgroundTint="@color/grey_E8E8"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/gpt_answer_name_tv"
+                style="@style/bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="hello" />
+
+            <TextView
+                android:id="@+id/gpt_answer_reason_tv"
+                style="@style/regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:breakStrategy="simple"
+                android:maxWidth="260dp"
+                tools:text="hihi" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

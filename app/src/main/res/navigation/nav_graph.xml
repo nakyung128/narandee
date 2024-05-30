@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gotcha.narandee.src.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_foodFragment"
+            app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_clothesFragment"
+            app:destination="@id/clothesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_customFragment"
+            app:destination="@id/customFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPageFragment"
+        android:name="com.gotcha.narandee.src.mypage.MyPageFragment"
+        android:label="MyPageFragment"
+        tools:layout="@layout/fragment_mypage">
+        <action
+            android:id="@+id/action_myPageFragment_to_selectActivity"
+            app:destination="@id/selectActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/clothesFragment"
+        android:name="com.gotcha.narandee.src.clothes.ClothesFragment"
+        android:label="fragment_clothes"
+        tools:layout="@layout/fragment_clothes">
+        <action
+            android:id="@+id/action_clothesFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.gotcha.narandee.src.food.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food">
+        <action
+            android:id="@+id/action_foodFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeFragment"
+        android:name="com.gotcha.narandee.src.place.PlaceFragment"
+        android:label="fragment_place"
+        tools:layout="@layout/fragment_place">
+        <action
+            android:id="@+id/action_placeFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.gotcha.narandee.src.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.gotcha.narandee.src.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.gotcha.narandee.src.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/infoActivity"
+        android:name="com.gotcha.narandee.src.signup.InfoActivity"
+        android:label="activity_info"
+        tools:layout="@layout/activity_info" />
+    <activity
+        android:id="@+id/nameActivity"
+        android:name="com.gotcha.narandee.src.signup.NameActivity"
+        android:label="activity_name"
+        tools:layout="@layout/activity_name" />
+    <activity
+        android:id="@+id/selectActivity"
+        android:name="com.gotcha.narandee.src.signup.SelectActivity"
+        android:label="activity_select"
+        tools:layout="@layout/activity_select" />
+    <fragment
+        android:id="@+id/customFragment"
+        android:name="com.gotcha.narandee.src.custom.CustomFragment"
+        android:label="fragment_custom"
+        tools:layout="@layout/fragment_custom">
+        <action
+            android:id="@+id/action_customFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+</navigation>

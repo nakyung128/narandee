@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/narandee_green"
+        android:textSize="18sp"
+        tools:text="오늘 뭐 먹지?" />
+
+    <TextView
+        android:id="@+id/script_tv"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="@color/dark_grey"
+        tools:text="항상 고민되는 오늘의 메뉴,\n내 취향에 맞는 음식을 추천해 줘요" />
+
+    <ImageView
+        android:id="@+id/pager_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        tools:srcCompat="@drawable/page_img1" />
+</LinearLayout>

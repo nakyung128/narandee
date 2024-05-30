@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".src.signup.SelectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="74dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/select_name_tv"
+            style="@style/semiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:textSize="20sp"
+            android:text="@string/select_title_1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/select_title_tv_2"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:textSize="20sp"
+        android:text="@string/select_title_2" />
+
+    <TextView
+        android:id="@+id/select_script_tv"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/select_script"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/food_script_tv"
+        style="@style/medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/food_script"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/korean_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/korean"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/western_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/western"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/chinese_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/chinese"
+            android:textColor="@drawable/selector_preference_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/japanese_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/japanese"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/asian_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/asian"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/mexican_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/mexican"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/food_everything_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/food_everything"
+            android:textColor="@drawable/selector_preference_text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fashion_script_tv"
+        style="@style/medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/fashion_script"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/casual_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/selector_preference_btn"
+            android:text="@string/casual"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/street_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/selector_preference_btn"
+            android:text="스트릿"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/vintage_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:text="빈티지"
+            android:textColor="@drawable/selector_preference_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minimal_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:textColor="@drawable/selector_preference_text"
+            android:text="미니멀" />
+
+        <Button
+            android:id="@+id/modern_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:textColor="@drawable/selector_preference_text"
+            android:text="모던" />
+
+        <Button
+            android:id="@+id/feminin_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:textColor="@drawable/selector_preference_text"
+            android:text="페미닌" />
+
+        <Button
+            android:id="@+id/lovely_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_preference_btn"
+            android:textColor="@drawable/selector_preference_text"
+            android:text="러블리" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sporty_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/selector_preference_btn"
+            android:text="스포티"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/vacation_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/selector_preference_btn"
+            android:text="휴양지룩"
+            android:textColor="@drawable/selector_preference_text" />
+
+        <Button
+            android:id="@+id/fashion_everything_btn"
+            style="@style/regular"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="38dp"
+            android:background="@drawable/selector_preference_btn"
+            android:text="상관없음"
+            android:textColor="@drawable/selector_preference_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/select_finish_btn"
+            style="@style/regular"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/login_button"
+            android:text="완료"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

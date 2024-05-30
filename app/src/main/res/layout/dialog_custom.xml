@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape_round_20_white">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        tools:text="다이얼로그 타이틀"
+        style="@style/bold"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        tools:text="다이얼로그 본문"
+        android:textSize="16sp"
+        style="@style/medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+    <View
+        android:id="@+id/dialog_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="26dp"
+        android:background="#33000000"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_content" />
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/cancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dialog_divider2"
+        app:layout_constraintTop_toBottomOf="@id/dialog_divider" />
+
+    <View
+        android:id="@+id/dialog_divider2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#33000000"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_cancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_divider" />
+
+    <TextView
+        android:id="@+id/dialog_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/check"
+        app:layout_constraintLeft_toRightOf="@id/dialog_divider2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

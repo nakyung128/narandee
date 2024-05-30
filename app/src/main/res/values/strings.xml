@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">나랜디</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_home">홈</string>
+    <string name="nav_mypage">마이페이지</string>
+
+    <string name="api_key">AIzaSyCDPCrVpqBuSTjSILK85XYAaKsJVclJ_hY</string>
+
+    <string name="splash_comment">결정을 잘 못하는 당신을 위한,</string>
+
+    <string name="home_title_sir">님,</string>
+    <string name="home_title_comment">오늘은 어떤 결정이 필요하신가요?</string>
+    <string name="home_food_title">뭐 먹을지 고민된다면?</string>
+    <string name="home_food_comment">취향에 맞는 음식을 추천해 드려요</string>
+    <string name="home_place_title">오늘은 어디로 놀러가지?</string>
+    <string name="home_place_comment">요즘 유행하는 장소들을 알려드릴게요</string>
+    <string name="home_clothes_title">아… 오늘은 뭐 입지?</string>
+    <string name="home_clothes_comment">날씨에 맞는 코디를 추천해 드려요</string>
+    <string name="home_custom_title">커스텀 질문하기</string>
+    <string name="home_custom_comment">정하기 어려운 결정을 AI에게 맡겨보세요</string>
+
+    <string name="mypage">마이페이지</string>
+
+    <string name="mypage_edit_profile">프로필 수정</string>
+    <string name="mypage_preference">취향 수정하기</string>
+    <string name="mypage_logout">로그아웃</string>
+    <string name="mypage_unsubscribe">회원탈퇴</string>
+
+    <string name="string_nickname">나랜디에서 사용할\n닉네임을 입력해 주세요</string>
+    <string name="random_title">랜덤 생성</string>
+    <string name="hint_nickname">풀먹는 쿠로미</string>
+
+    <string name="name_empty">닉네임을 입력해 주세요</string>
+
+    <string name="check">확인</string>
+    <string name="next">다음</string>
+    <string name="cancel">취소</string>
+    <string name="hello_script">님, 반가워요 👋</string>
+    <string name="select_title_2">당신의 취향을 선택해 주세요 🙂</string>
+    <string name="select_script">모든 선택지는 중복 선택이 가능해요</string>
+    <string name="food_script">제 음식 취향은...</string>
+    <string name="korean">한식</string>
+    <string name="western">서양식</string>
+    <string name="chinese">중식</string>
+    <string name="japanese">일식</string>
+    <string name="asian">아시안</string>
+    <string name="mexican">멕시칸</string>
+    <string name="food_everything">상관없음</string>
+    <string name="fashion_script">제 옷 취향은...</string>
+    <string name="casual">캐주얼</string>
+
+    <string name="today">오늘</string>
+    <string name="especially">특별히</string>
+    <string name="food_title">먹고 싶은 음식 종류가 있으신가요?</string>
+    <string name="food_time_title">언제 드실 예정이신가요?</string>
+    <string name="place_title_1">여행을 떠나는 곳이</string>
+    <string name="place_title_2">어디인지 알려 주세요 😊</string>
+    <string name="place_title_3">가고싶은 지역이 있다면 입력해 주세요</string>
+    <string name="place_example">예) 해운대</string>
+
+    <string name="gpt_name">어시스턴트</string>
+    <string name="result_finish">종료하기</string>
+    <string name="result_again">다시 추천해 줘</string>
+    <string name="result_end">추천이 종료되었습니다. 다음에 또 찾아 주세요! 😘</string>
+
+    <string name="select_title_1">추천에 참고할 수 있도록</string>
+    <string name="info_script">성별과 나이대를 알려 주세요</string>
+    <string name="gender_script">성별</string>
+    <string name="age_script">나이대</string>
+    <string name="loading_dialog_script">고심해서 고르는 중이에요 🧐</string>
+    <string name="place_with_title">누구와 함께 가나요?</string>
+
+    <string name="clothes_location_title">어디로 외출할 예정이신가요?</string>
+    <string name="clothes_title">입고 싶은 옷이 있으신가요?</string>
+    <string name="clothes_get_location">현재 위치 가져오기</string>
+    <string name="location_example">예) 부산 해운대구</string>
+    <string name="clothes_location_title_2">정확한 주소를 입력하지 않으면 추천 정확도가 떨어질 수 있어요</string>
+    <string name="clothes_location_error">현재 위치를 가져올 수 없습니다</string>
+    <string name="clothes_check_location">주소 확인하기</string>
+    <string name="clothes_address_error">유효한 주소가 아닙니다</string>
+    <string name="clothes_selected_address_title">선택된 주소 :  </string>
+    <string name="place_title_5">더 특정한 장소를 작성해도 좋아요</string>
+    <string name="custom_script_1">결정하기 어려웠던 것들을</string>
+    <string name="custom_script_2">에게 마음껏 물어보세요!</string>
+    <string name="custom_script_3">최선을 다해 대답해 줄 거예요</string>
+    <string name="custom_script_4">인공지능의 답변이니 가벼운 마음으로 받아들여 주세요 🙂</string>
+    <string name="send_btn_title">🚀</string>
+
+    <string name="add_widget">위젯 추가</string>
+    <string name="app_widget_description">결정이 어려울 때 사용해보세요!</string>
+
+</resources>

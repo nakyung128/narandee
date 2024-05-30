@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.signup.NameActivity">
+
+    <TextView
+        android:id="@+id/name_title_tv"
+        style="@style/semiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/string_nickname"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nickname_et"
+        style="@style/regular"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="@string/hint_nickname"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/random_btn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_title_tv" />
+
+    <Button
+        android:id="@+id/random_btn"
+        style="@style/regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/random_title"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/nickname_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nickname_et"
+        app:layout_constraintTop_toTopOf="@id/nickname_et" />
+
+    <Button
+        android:id="@+id/name_next_btn"
+        style="@style/regular"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/login_button"
+        android:text="다음"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_et" />
+</androidx.constraintlayout.widget.ConstraintLayout>
