@@ -15,8 +15,12 @@
 - 2024.05.13 ~ 2023.05.23
 
 ## 기술 스택
-- Android Studio
-- Kotlin
+| **Architecture Pattern** | MVVM |
+| :------  | :------------------------------------------------------------------ |
+| **Jetpack Components** | LiveData, DataBinding, ViewModel, Navigation, viewPager2 |
+| **Network** | Retrofit2, coroutine, ChatGPT API, OpenWeatherMap API |
+| **DataBase** | FireBase Realtime Database | 
+| **Team Collaboration Tool** | Notion, GitLab |
 
 ## PPT
 ![240524_11기_구미_6반_관통PJT_이나경_이현진-1](https://github.com/nakyung128/narandee/assets/68213689/d4556efa-f41c-4405-94b1-4f8c8a2c5475)
